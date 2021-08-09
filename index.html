@@ -32,8 +32,8 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="shortcut icon" href="./favicons/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="style.css" />
-	<!-- <link rel="stylesheet" href="style2.css" /> -->
+	<!-- <link rel="stylesheet" href="style.css" /> -->
+	<link rel="stylesheet" href="style2.css" />
 
 	<title>Swapnil Dubey</title>
 </head>
@@ -42,11 +42,13 @@
 	<div class="maincontainer">
 		<section id="intro">
 			<div class="left">
-				<h3>
-					Hey, my name is
-					<h1 class="floating"><strong>Swapnil Dubey.</strong></h1>
-				</h3>
-				<p>Welcome to my corner of the internet</p>
+				<div class="content">
+					<h3>
+						Hey, my name is
+						<h1 class="floating"><strong>Swapnil Dubey.</strong></h1>
+					</h3>
+					<h4>Welcome to my corner of the internet</h4>
+				</div>
 			</div>
 
 			<div class="right">
@@ -59,34 +61,37 @@
 			</div>
 
 			<div class="right">
-				<h2>About Me 🎓</h2>
-				<p>
-					I graduated <a href="https://www.psu.edu/" target="blank" rel="noopener noreferrer">Pennsylvania
-						State University</a> in May
-					2021 with a
-					Bachelors of Science in 2 fields:
-				</p>
-				<br><br>
-				<ul>
-					<li>Electrical Engineering</li>
-					<li>Astronomy and Astrophysics.</li>
-				</ul>
+				<div class="content">
+					<h2>About Me 🎓</h2>
+					<p>
+						I graduated <a href="https://www.psu.edu/" target="blank" rel="noopener noreferrer">Pennsylvania
+							State University</a> in May
+						2021 with a
+						Bachelors of Science in 2 fields:
+					</p>
+					<br>
+					<ul>
+						<li>Electrical Engineering</li>
+						<li>Astronomy and Astrophysics.</li>
+					</ul>
+	
+					<br>
+	
+					<p>
+						For my
+						<a href="https://sites.psu.edu/lfshowcasesp20/2020/04/29/schlumberger-5-downhole-electro-hydraulic-control-system/"
+							target="_blank" rel="noopener noreferrer">
+							Final Year Project</a>,
+						I got the chance to work with a great team of Engineers and our
+						sponsors from <a href="https://www.slb.com/" target="_blank"
+							rel="noopener noreferrer">Schlumerger</a>.
+						<br> <br>
+						My skills as a Developer and Electrical engineer were tested to the limit but overcoming that
+						challenge helped me learn and grow a lot. I wish to continue having such experiences throughout my
+						career.
+					</p>
 
-				<br><br>
-
-				<p>
-					For my
-					<a href="https://sites.psu.edu/lfshowcasesp20/2020/04/29/schlumberger-5-downhole-electro-hydraulic-control-system/"
-						target="_blank" rel="noopener noreferrer">
-						Final Year Project</a>,
-					I got the chance to work with a great team of Engineers and our
-					sponsors from <a href="https://www.slb.com/" target="_blank"
-						rel="noopener noreferrer">Schlumerger</a>.
-					<br> <br>
-					My skills as a Developer and Electrical engineer were tested to the limit but overcoming that
-					challenge helped me learn and grow a lot. I wish to continue having such experiences throughout my
-					career.
-				</p>
+				</div>
 			</div>
 		</section>
 		<section id="job">
@@ -172,9 +177,10 @@
 		</section>
 		<section id="resume">
 			<div class="left">
-				<h2>Resume</h2>
-				<p>Feel free to <a href="./resume/R3_Resume_June_2021.pdf" download>download my resume</a> below!</p>
-
+				<div class="content">
+					<h2>Resume</h2>
+					<p>Feel free to <a href="./resume/R3_Resume_June_2021.pdf" download>download my resume</a> below!</p>
+				</div>
 			</div>
 			<div class="right">
 				<iframe src="resume\R3_Resume_June_2021.pdf#zoom=80" frameborder="0"
@@ -186,39 +192,42 @@
 
 
 		<section id="email">
-			<form target="blank" action="https://formsubmit.co/6cc55035ce0b7afa771b6e2d4da9febd" method="POST"
-				class="right">
-				<div class="center">
-					<label for="name">Your Name</label>
-					<input type="text" name="name" class="form-control" required>
-
-					<label for="email"> E-mail</label>
-					<input type="email" name="email" class="form-control" required>
-
-					<label for="subject">Subject</label>
-					<input type="subject" name="subject" class="form-control">
-
-					<label for="message">Your Message</label>
-					<textarea placeholder="Feel free to share any thoughts and ideas here!" class="form-control"
-						name="message" rows="10" required></textarea>
-
-					<button type="submit" class="btn">
-						Shoot me an E-Mail !
-					</button>
-				</div>
-			</form>
+			<div class="right">
+				<form target="blank" action="https://formsubmit.co/6cc55035ce0b7afa771b6e2d4da9febd" method="POST">
+					<div class="center">
+						<label for="name">Your Name</label>
+						<input type="text" name="name" class="form-control" required>
+	
+						<label for="email"> E-mail</label>
+						<input type="email" name="email" class="form-control" required>
+	
+						<label for="subject">Subject</label>
+						<input type="subject" name="subject" class="form-control">
+	
+						<label for="message">Your Message</label>
+						<textarea placeholder="Feel free to share any thoughts and ideas here!" class="form-control"
+							name="message" rows="10" required></textarea>
+	
+						<button type="submit" class="btn">
+							Shoot me an E-Mail !
+						</button>
+					</div>
+				</form>
+			</div>
 			<div class="left">
-				<h2>Connect with me!</h2>
-
-				<div class="links">
-					<a href="https://www.linkedin.com/in/swapnil-dubey/" target="blank">
-						<p>LinkedIn</p>
-						<img src="./images/5296501_linkedin_network_linkedin logo_icon.png" alt="" />
-					</a>
-					<a href="https://github.com/swapdub" target="blank">
-						<p>Github</p>
-						<img src="./images/4202098_github_code_developer_logo_icon.png" alt="" />
-					</a>
+				<div class="content">
+					<h2>Connect with me!</h2>
+	
+					<div class="links">
+						<a href="https://www.linkedin.com/in/swapnil-dubey/" target="blank">
+							<p>LinkedIn</p>
+							<img src="./images/5296501_linkedin_network_linkedin logo_icon.png" alt="" />
+						</a>
+						<a href="https://github.com/swapdub" target="blank">
+							<p>Github</p>
+							<img src="./images/4202098_github_code_developer_logo_icon.png" alt="" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -250,11 +259,6 @@
 							href="https://www.youtube.com/channel/UCmi_1K0EhhgipONRw4dBJLg">Youtube</a>
 					</li>
 				</ul>
-				<p>
-
-				</p>
-				<p></p>
-
 			</div>
 		</section>
 	</div>

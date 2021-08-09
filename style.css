@@ -22,11 +22,6 @@ html {
   font-size: 2vh;
 }
 a {color: var(--text2);}
-h1 {
-  font: var(--cool-font);
-  font-size: clamp(10px, 50px,5rem);
-  font-weight: bolder;
-}
 h2 {font-size: 4rem;}
 h3 {font-size: 3rem;}
 
@@ -106,6 +101,9 @@ section > h2 {margin: 0 auto;}
   font-size: 3rem;
 }
 #intro h1 {
+  font: var(--cool-font);
+  font-size: clamp(10px, 50px,5rem);
+  font-weight: bolder;
   color: var(--text2);
   flex-basis: auto;
 }
