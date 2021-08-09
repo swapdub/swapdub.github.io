@@ -10,7 +10,7 @@
 }
 
 html {
-  --cool-font: italic clamp(1.25em, 15vw, 7em) / 1.25 marck script, purisa,
+  --cool-font: italic clamp(1.25em, 15vmin, 7em) / 1.25 marck script, purisa,
     segoe script, comic sans ms, cursive;
   --cool-font2: "Courier New", Courier, monospace;
   
@@ -18,127 +18,81 @@ html {
   --bg2: #333;
   --text1: #dddee0;
   --text2: #e0a526;
-
-  font-size: 2vh;
-}
-a {color: var(--text2);}
-h2 {font-size: 4rem;}
-h3 {font-size: 3rem;}
-
-p, li {
-  font-size: 2rem;
-  font-weight: lighter;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  background: var(--bg1);
+  
+  overflow-x: hidden;
   color: var(--text1);
+  background-color: var(--bg1);
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
-  display: flex;
 }
-.maincontainer {
+
+.maincontainer{
   height: 100vh;
   width: 100vw;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
-section {
+h1{
+  color: var(--text2);
+  font: var(--cool-font);
+  font-size: clamp(1.5rem, 10vmin, 5rem);
+}
+h3  {font-size: clamp(1.5rem, 9vmin, 4rem);}
+h4  {font-size: clamp(0.5rem, 5vmin, 2.5rem);}
+
+h2  {font-size: clamp(2rem, 10vmin, 4rem);}
+p , a, li{font-size: clamp(1rem, 4vmin, 1.5rem);}
+li  {margin-left: 25px;}
+a   {color: var(--text2)}
+
+img{width: clamp(320px, 50vmax, 80vh);}
+
+section{
   overflow-x: hidden;
+  overflow-y: hidden;
   scroll-snap-align: center;
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  /* border: solid 20px var(--bg1); */
-  /* margin: 0 80px; */
-  padding: 20px 80px;
-}
-section:nth-child(2) {
-  background-color: var(--bg1);
-}
-
-section > h2 {margin: 0 auto;}
-
-.left {
-  display: grid;
-  place-content: center;
-  text-align: start;
-  flex: 1 1;
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  flex: 1 1;
+  align-content: center;
+  height: 100vh;
 }
-.content-bot {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: space-around;
+.left, .right{
+  display: grid;
+  place-items: center;
+  height: auto;
   flex: 1 1;
+  margin: clamp(25px, 2vmax, 100px);
 }
+
 
 #intro .floating {
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-bottom: 20px;
-}
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-bottom: 20px;
   }
-  50% {
-    transform: translate(0, 15px);
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
   }
-  100% {
-    transform: translate(0, -0px);
-  }
-}
-#intro h2 {
-  font-size: 3rem;
-}
-#intro h1 {
-  font: var(--cool-font);
-  font-size: clamp(10px, 50px,5rem);
-  font-weight: bolder;
-  color: var(--text2);
-  flex-basis: auto;
-}
-#intro img {
-  width: 80vh;
-}
-#intro .right {
-  display: grid;
-  place-content: center;
-}
 
-#about-me ul {
-  margin-inline: 3ch;
-}
-#about-me .left {
-  display: flex;
-}
-#about-me img {
-  flex: 1 1;
-  padding: 0 60px 0 0;
-}
 
-#job {
-  display: grid;
-  place-content: center;
-}
+  
+
 
 /* Skills Page */
-#skills {
+#skills .content-bot > ul {
   display: flex;
-  flex-direction: column;
-}
-#skills div > ul {
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 1 1;
 
   font: var(--cool-font);
@@ -151,12 +105,11 @@ section > h2 {margin: 0 auto;}
 
 #skills .skill {
   position: relative;
-  padding: 2rem 0.75em;
+  padding: 1rem 0em;
   width: 250px;
 
   display: flex;
   flex-direction: column;
-  /* flex: 1 1; */
 }
 #skills .skill::after {
   content: "";
@@ -183,7 +136,6 @@ section > h2 {margin: 0 auto;}
 }
 
 #skills .skill > ul {
-  margin-top: 10px;
   width: 250px;
   z-index: 1;
 
@@ -191,18 +143,28 @@ section > h2 {margin: 0 auto;}
   text-align: left;
   display: grid;
   grid-auto-rows: minmax(100px, auto);
-  /* place-content: center; */
 }
 #skills .project > li {
-  font-size: 1.2rem;
   padding: 25px 0;
 }
 
 
+
+
+
+
 /* Download Resume */
-#resume iframe {
+#resume iframe,
+#resume .right {
+  display: flex;
   flex: 1 1;
+  height: 100%;
 }
+@media screen {
+  
+}
+
+
 
 
 /* Social Media and links */
@@ -218,13 +180,14 @@ section > h2 {margin: 0 auto;}
 #email .links {
   flex: 1 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  text-align: center;
 }
 #email .links a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5em;
+  padding: 1em 3em;
 }
 #email .links img {
   --icon-size: 80px;
@@ -238,7 +201,7 @@ section > h2 {margin: 0 auto;}
   font-family: var(--cool-font2);
   font-weight: 700;
   text-align: start;
-  padding-top: 0px;
+  padding: 30px;
   border-radius: 40px;
   border-top: 5px solid var(--text2);
   border-bottom: 10px solid var(--text2);
@@ -258,9 +221,8 @@ section > h2 {margin: 0 auto;}
   border: none;
   padding: 10px;
 
-  min-height: 40px;
-  max-width: 80ch;
-  min-width: 80ch;
+  height: clamp(30px, 4vmin, 1.5rem);;
+  width: clamp(1rem, 80vmin, 80ch);;
   resize: none;
 }
 
@@ -286,7 +248,7 @@ section > h2 {margin: 0 auto;}
   padding: 1em 2em;
   background-color: var(--text2);
   color: var(--bg1);
-  font-size: 1.5rem;
+  font-size: clamp(1em, 5vmin, 1.5em);
 }
 #email button:active{
   border: 5px solid white;
@@ -295,41 +257,3 @@ section > h2 {margin: 0 auto;}
 #email button {
   margin: 10px 0;
 }
-
-/* Credits Page */
-#credits .right{
-    display: grid;
-    grid-auto-rows: auto;
-    place-content: center;
-}
-#credits li>ul{
-    padding-left: 1ch;
-    list-style: none;
-}
-#credits ul>li{
-    padding: 1rem 0;
-}
-#credits .right *{
-    font-size: 1.2rem;
-}
-
-
-/* @media screen and (max-width:768px){
-  
-  h1{
-    font-size:xx-large;
-  }
-  h2{
-    font-size:x-large;
-  }
-  section{
-    padding: 10px;
-  }
-  #intro img{
-    width: 50vh;
-  }
-
-  #about-me .right{
-    order: 1;
-  }
-} */
