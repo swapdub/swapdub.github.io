@@ -40,7 +40,7 @@ h1{
 h3  {font-size: clamp(1.5rem, 9vmin, 4rem);}
 h4  {font-size: clamp(0.5rem, 5vmin, 2.5rem);}
 
-h2  {font-size: clamp(2rem, 10vmin, 4rem);}
+h2  {font-size: clamp(2rem, 10vmin, 4rem); text-align: center;}
 p , a, li{font-size: clamp(1rem, 4vmin, 1.5rem);}
 li  {margin-left: 25px;}
 a   {color: var(--text2)}
@@ -86,7 +86,7 @@ section{
   }
 
 
-  
+
 
 
 /* Skills Page */
