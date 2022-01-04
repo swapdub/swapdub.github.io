@@ -74,9 +74,14 @@ section:nth-child(1) {
 }
 
 .sidebar > a:hover {
-  color: var(--bg1);
-  background: var(--color-highlight);
   border-radius: 10px;
+  animation: fadeIn forwards 0.5s;
+}
+@keyframes fadeIn {
+  100%{
+    color: var(--bg1);
+    background: var(--color-highlight);
+  }
 }
 
 #Socials > * {
