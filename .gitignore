@@ -1,3 +1,4 @@
 *.zip
 style2.css
 *.json
+!projects*
