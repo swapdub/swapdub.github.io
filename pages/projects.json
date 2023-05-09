@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Windows Batch",
+    "projects": [
+      {
+        "Name": "Windows Scripting",
+        "URL": "./windows_scripting.html",
+        "Description": "Scripts and notes on powershell commands used to automate windows."
+      }
+    ]
+  },
+  {
+    "title": "Python",
+    "projects": [
+      {
+        "Name": "Music Bot for Discord",
+        "URL": "https://github.com/swapdub/Discord_Bot",
+        "Description": "Listen to music together with friends on a Discord call."
+      },
+      {
+        "Name": "Space Invaders using Pygame",
+        "URL": "https://github.com/swapdub/Space_invaders_py",
+        "Description": "Classic Space Invaders game built to practice and understand use of Object Oriented Programming."
+      },
+      {
+        "Name": "Guess-the-Number",
+        "URL": "https://replit.com/@swapdub/Guess-the-Number",
+        "Description": "A Command-Line-Interface game where user tries to guess."
+      },
+      {
+        "Name": "Computational Astrophysics",
+        "URL": "https://github.com/swapdub/Computational_Astrophysics",
+        "Description": "Implemented Algorithms and interpolation functions using python for Data Analysis and Simulations."
+      },
+      {
+        "Name": "CSV Suffix Cleaner Bot",
+        "URL": "https://github.com/swapdub/ClientBAM",
+        "Description": "A PyQt application using RegEx to filter and remove suffixes out of words or names."
+      }
+    ]
+  },
+  {
+    "title": "HTML/CSS",
+    "projects": [
+      {
+        "Name": "Dice Challenge",
+        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Dicee Challenge - Starting Files/dicee.html",
+        "Description": "A simple game around random number generation where each page-refresh is a turn."
+      },
+      {
+        "Name": "Drum Kits",
+        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Drum Kit Starting Files/index.html",
+        "Description": "A Drum kit simulator that is triggered by key events."
+      },
+      {
+        "Name": "Simon Says",
+        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Simon Game Challenge Starting Files/index.html",
+        "Description": "A single-player memory game to familiarize with reading events and data manipulation."
+      },
+      {
+        "Name": "Custom Website CSS Practice",
+        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/",
+        "Description": "First version of a Portfolio Website."
+      },
+      {
+        "Name": "Tindog Website (Bootstrap 5)",
+        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Bootstrap-installation/TinDog-Start-master/index.html",
+        "Description": "Tinder clone frontend built for dog owners."
+      }
+    ]
+  },
+  {
+    "title": "C and C++",
+    "projects": [
+      {
+        "Name": "Graphical LCD Program",
+        "URL": "https://github.com/swapdub/TrusineGLCD",
+        "Description": "Embedded level C code to control a graphical LCD."
+      }
+    ]
+  },
+  {
+    "title": "LabView",
+    "projects": [
+      {
+        "Name": "Theremin Control Panel",
+        "URL": "https://github.com/swapdub/EE300W-Light-Sensitive-Theremin",
+        "Description": "A low budget LabVIEW interface designed to control light sensors creating a 2D plane of control for the musician."
+      },
+      {
+        "Name": "State Machines",
+        "URL": "https://github.com/swapdub/EE200_Design-Tools_building-State-Machines",
+        "Description": "Code for a State Machine, a device similar to the control panel of a vending machine."
+      }
+    ]
+  },
+  {
+    "title": "MATLAB",
+    "projects": [
+      {
+        "Name": "Computer Vision",
+        "URL": "https://github.com/swapdub/EE-454-Computer-Vision",
+        "Description": "Algorithms written to perform transformations, apply correction filters, and 3D spatial anaylsis using pictures, math and matrices."
+      }
+    ]
+  }
+]
