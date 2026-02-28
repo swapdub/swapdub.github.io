@@ -1,58 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Scripting — Swapnil Dubey</title>
+    <meta name="description" content="Automating Windows with batch scripting — a quick dev note." />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows Scripting</title>
-    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png" />
+    <link rel="shortcut icon" href="../favicons/favicon.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="../css/pages.css" />
+  </head>
 
-</head>
+  <body>
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="nav__container">
+        <a href="/" class="nav__logo">SD</a>
+        <a href="/" class="nav__back">
+          <i data-feather="arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+    </nav>
 
-<body style="margin: 10vw;">
-    <h1>Windows Scripting</h1>
-    </ul>
-    <p>I recently got the urge to try automating Windows. The idea had been floating in my mind for a while now, pushed
-        by this ad of a <a href="https://www.udemy.com/course/automate/" target="_blank" rel="noopener noreferrer">Udemy
-            course</a> pushing me to automate the boring stuff in my life by making itself free every other week. So, I
-        finally caved and have found a problem relevant to me to work on. Automating opening and logging into my games.
-        Being an international student myself, and having friends spread out across the globe. While in general the
-        internet has been a boon for people sitting at home and tinkering their life away while getting to enjoy playing
-        games, some companies seem to want to particularly annoy you by making something difficult that should be easy
-        (RIOT GAMES!! 😡).
+    <div class="page-wrap">
 
-        <h2>Problem:</h2>
+      <header class="page-header reveal">
+        <span class="page-header__label">Dev Notes</span>
+        <h1 class="page-header__title">Windows Scripting</h1>
+        <p class="page-header__desc">
+          A short write-up on automating Windows with batch scripting — minimal installation, practical result.
+        </p>
+      </header>
 
-        So obviously 🙄, I need to have 2 accounts for different regions which means I can not use "Keep me Signed in"
-        since I have to constantly switch and their ancient client can not handle saving multiple account logins.
-        Therefore the objective is.
+      <article class="article-body reveal">
 
-        <h2>Objective:</h2>
-        Have a script that would open a program, wait for it to load, and type in the relevant credentials. And I just
-        make 2 of those scripts, one for each region that I play on.
+        <p>
+          I recently got the urge to automate a genuinely annoying part of my gaming setup. The idea
+          had been floating around for a while, nudged along by a recurring
+          <a href="https://www.udemy.com/course/automate/" target="_blank" rel="noopener noreferrer">Udemy course</a>
+          that pops up free every other week. I finally caved.
+        </p>
 
-        <h2>Process:</h2>
-        Of the many options I could choose, I went with a batch script since that required the minimum overhead,
-        basically no installation. Using Python would require too many installations and while it does seem to be more
-        versatile, I think my use case does not justify such a big program.
-        <br>
-        <br>
-        My research got me to
+        <h2>The Problem</h2>
+        <p>
+          League of Legends divides its player base by region — a great design choice for latency, a
+          terrible one if you have friends on both sides of the planet. Playing on both NA and EUW
+          means two accounts. Their client famously cannot remember multiple logins, so every session
+          starts with typing credentials manually. Riot Games' login UX in 2021: ☆☆☆☆☆.
+        </p>
 
-        <h2>Tools:</h2>
+        <h2>The Objective</h2>
+        <p>
+          Write a script for each region that: opens the League client, waits for it to load,
+          then automatically types the correct username and password into the login fields.
+          One double-click — done.
+        </p>
+
+        <h2>Why Batch?</h2>
+        <p>
+          Of the realistic options — Python (with PyAutoGUI), AutoHotkey, or plain Batch — I went
+          with Batch scripting. Zero installations required. It ships with every version of Windows
+          and, for a task this focused, the overhead of spinning up a Python environment wasn't
+          worth it.
+        </p>
+        <p>
+          The core trick is using <code>timeout</code> to wait for the client splash screen to
+          clear, then <code>mshta vbscript</code> for sending keystrokes, since Batch doesn't have
+          native input simulation.
+        </p>
+
+        <h2>Tools</h2>
         <ul>
-            <li>Batch Scripting</li>
+          <li>Windows Batch Scripting (<code>.bat</code>)</li>
+          <li><code>mshta vbscript</code> — for programmatic keystrokes</li>
+          <li><code>start</code> &amp; <code>timeout</code> — launch and wait</li>
         </ul>
 
-        <h2>Resources:</h2>
+        <h2>Resources</h2>
         <ul>
-            <li><a href="https://www.tutorialspoint.com/batch_script/batch_script_commands.htm" target="_blank"
-                    rel="noopener noreferrer">List of Batch Commands</a></li>
-            <li><a href="https://github.com/swapdub/Windows_Scripting" target="_blank" rel="noopener noreferrer"> My
-                    Final Script | Github</a></li>
+          <li>
+            <a href="https://www.tutorialspoint.com/batch_script/batch_script_commands.htm"
+               target="_blank" rel="noopener noreferrer">
+              Tutorialspoint — Batch Script Commands Reference
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/swapdub/Windows_Scripting"
+               target="_blank" rel="noopener noreferrer">
+              <i data-feather="github"></i> My Final Script on GitHub
+            </a>
+          </li>
         </ul>
-    </p>
-</body>
 
+      </article>
+
+    </div>
+
+    <footer class="page-footer">
+      <p>© 2026 Swapnil Dubey &nbsp;·&nbsp; <a href="/">swapdub.github.io</a></p>
+    </footer>
+
+    <script>feather.replace();</script>
+    <script>
+      document.querySelectorAll('.reveal').forEach(el => {
+        const obs = new IntersectionObserver(entries => {
+          entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+        }, { threshold: 0.08 });
+        obs.observe(el);
+      });
+    </script>
+  </body>
 </html>

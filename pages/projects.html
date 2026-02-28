@@ -143,69 +143,71 @@
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <main class="safe-area-view">
-      <!-- <h1>Projects</h1> -->
-      <!-- <ul> -->
-      <!-- <li>
-        <h2>Hackathons</h2>
-        <ul>
-          <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer"
-              >Placed 3rd: UNleash Bangladesh</a
-            >
-          </li>
-        </ul>
-      </li>
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="nav__container">
+        <a href="/" class="nav__logo">SD</a>
+        <a href="/" class="nav__back">
+          <i data-feather="arrow-left"></i> Back to Portfolio
+        </a>
+      </div>
+    </nav>
 
-      <li>
-        <h2>PSU</h2>
-        <ul>
-          <li>
-            <a
-              href="http://www.personal.psu.edu/sfd5205/firstpage.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >EDSGN Website</a
-            >
-          </li>
-          <li>
-            <a
-              href="http://www.personal.psu.edu/sfd5205/My%20Design%20Portfolio.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Engineering Design Course</a
-            >
-          </li>
-        </ul>
-      </li> -->
-      <h2>Projects</h2>
-      <hr />
-      <div id="personal"></div>
+    <div class="page-wrap">
+      <header class="page-header reveal">
+        <span class="page-header__label">All Projects</span>
+        <h1 class="page-header__title">Things I've Built</h1>
+        <p class="page-header__desc">
+          A complete list of my projects, organised by domain. The most impactful ones are also
+          featured on the <a href="/" style="color: var(--color-gold);" >main page</a>.
+        </p>
+      </header>
 
-      <h2>Try Hack Me - Ranked Top 14%</h2>
-      <hr />
-      <ul>
-        <h3>Badges</h3>
-        <li>
-          <a
-            href="https://tryhackme.com/fulltoss/badges/terminaled"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Linux Basics</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://tryhackme.com/fulltoss/badges/web-fund"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Understanding Web Fundamentals</a
-          >
-        </li>
-        <li><script src="https://tryhackme.com/badge/591381"></script></li>
-      </ul>
+      <!-- Projects injected here by projects.js -->
+      <div id="projects-container"></div>
 
-    </main>
+      <!-- TryHackMe -->
+      <section style="margin-top: 64px;">
+        <h2 class="section-title reveal">Cybersecurity</h2>
+        <div class="glass-card reveal" style="padding: 28px; display: flex; flex-direction: column; gap: 12px; max-width: 520px;">
+          <div style="display:flex; align-items:center; gap:14px;">
+            <span style="font-size:1.6rem;">🔐</span>
+            <div>
+              <h3 style="font-size:1.05rem; font-weight:600; color: var(--color-text1);">TryHackMe</h3>
+              <span style="font-size:0.82rem; color: var(--color-gold);">Top 14% globally</span>
+            </div>
+          </div>
+          <p style="font-size:0.9rem; color:#b4b4b4; line-height:1.65;">
+            Completed rooms covering Linux fundamentals and web security through hands-on
+            challenges on TryHackMe's learning platform.
+          </p>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <span class="tech-tag tech-tag--accent">Linux Basics</span>
+            <span class="tech-tag">Web Fundamentals</span>
+            <span class="tech-tag">Networking</span>
+          </div>
+          <a href="https://tryhackme.com/p/fulltoss" target="_blank" rel="noopener noreferrer"
+             style="display:inline-flex; align-items:center; gap:6px; font-size:0.85rem;
+                    color:var(--color-gold); margin-top:4px;">
+            View Profile <i data-feather="external-link" style="width:13px;height:13px;"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="page-footer">
+      <p>© 2026 Swapnil Dubey &nbsp;·&nbsp; <a href="/">swapdub.github.io</a></p>
+    </footer>
+
+    <script>feather.replace();</script>
+    <script src="../js/projects.js"></script>
+    <script>
+      document.querySelectorAll('.reveal').forEach(el => {
+        const obs = new IntersectionObserver(entries => {
+          entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        obs.observe(el);
+      });
+    </script>
   </body>
-  <script src="../js/projects.js"></script>
 </html>

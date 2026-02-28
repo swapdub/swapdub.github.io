@@ -342,7 +342,7 @@ code {
 
 .hero__desc {
   font-size: clamp(0.92rem, 1.8vw, 1.05rem);
-  color: var(--color-text2);
+  color: #b4b4b4;
   max-width: 600px;
   line-height: 1.7;
 }

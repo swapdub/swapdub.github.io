@@ -1,122 +1,126 @@
-[
-  {
-    "title": "Full-Stack & DevOps",
-    "projects": [
-      {
-        "Name": "Samba Web UI",
-        "URL": "https://github.com/swapdub",
-        "Description": "Full-stack web app to manage Samba shares on self-hosted Linux servers. Next.js frontend + Python/Flask backend that safely edits /etc/samba/smb.conf. Deployed with Docker Compose behind Nginx Proxy Manager."
-      },
-      {
-        "Name": "Self-Hosted Home Server",
-        "URL": "https://github.com/swapdub",
-        "Description": "Personal Ubuntu 22 LTS server running 8+ self-hosted services: Jellyfin, Immich, Minecraft, and more. Managed with Docker Compose and Portainer, exposed securely via Nginx Proxy Manager and Tailscale VPN. Includes reproducible setup and recovery scripts."
-      }
-    ]
-  },
-  {
-    "title": "Embedded & Hardware",
-    "projects": [
-      {
-        "Name": "Downhole Electro-Hydraulic Control System",
-        "URL": "https://github.com/swapdub",
-        "Description": "Penn State Capstone with Schlumberger. Led a 7-member cross-departmental team to deliver a portable touch interface for an electro-hydraulic control system. C++ and Python on Arduino + Raspberry Pi. Achieved a 60% cost reduction over traditional solutions."
-      }
-    ]
-  },
-  {
-    "title": "Python",
-    "projects": [
-      {
-        "Name": "Discord Music Bot",
-        "URL": "https://github.com/swapdub/Discord_Bot",
-        "Description": "Deployed across multiple Discord servers, handling 50+ daily song requests. Automated YouTube/Spotify search and playback using discord.py and web scraping."
-      },
-      {
-        "Name": "Computational Astrophysics",
-        "URL": "https://github.com/swapdub/Computational_Astrophysics",
-        "Description": "Numerical algorithms and interpolation functions for astrophysical data analysis and simulations. Covers orbital mechanics, statistical distributions, and integration methods from scratch using NumPy."
-      },
-      {
-        "Name": "Space Invaders (Pygame)",
-        "URL": "https://github.com/swapdub/Space_invaders_py",
-        "Description": "Classic Space Invaders built to practice and understand Object Oriented Programming in Python."
-      },
-      {
-        "Name": "CSV Suffix Cleaner",
-        "URL": "https://github.com/swapdub/ClientBAM",
-        "Description": "A PyQt application using RegEx to filter and remove suffixes from words or names in CSV files."
-      }
-    ]
-  },
-  {
-    "title": "Computer Vision & Signal Processing",
-    "projects": [
-      {
-        "Name": "Computer Vision",
-        "URL": "https://github.com/swapdub/EE-454-Computer-Vision",
-        "Description": "Image processing algorithms including Hough Transforms for edge detection, and AR spatial mapping. Extracted 3D spatial data from video and mapped 2D images onto 3D world with user movement tracking using MATLAB and Python."
-      }
-    ]
-  },
-  {
-    "title": "Windows Scripting",
-    "projects": [
-      {
-        "Name": "Windows Scripting",
-        "URL": "./windows_scripting.html",
-        "Description": "Scripts and notes on PowerShell commands used to automate Windows workflows."
-      }
-    ]
-  },
-  {
-    "title": "HTML/CSS Exercises",
-    "projects": [
-      {
-        "Name": "Dice Challenge",
-        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Dicee Challenge - Starting Files/dicee.html",
-        "Description": "A simple game around random number generation where each page-refresh is a turn."
-      },
-      {
-        "Name": "Drum Kit",
-        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Drum Kit Starting Files/index.html",
-        "Description": "A Drum kit simulator triggered by key events."
-      },
-      {
-        "Name": "Simon Says",
-        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Simon Game Challenge Starting Files/index.html",
-        "Description": "A single-player memory game familiarizing with event handling and data manipulation."
-      },
-      {
-        "Name": "TinDog Website (Bootstrap 5)",
-        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Bootstrap-installation/TinDog-Start-master/index.html",
-        "Description": "Tinder clone frontend built for dog owners — a Bootstrap 5 practice project."
-      }
-    ]
-  },
-  {
-    "title": "C and C++ (Embedded)",
-    "projects": [
-      {
-        "Name": "Graphical LCD Driver",
-        "URL": "https://github.com/swapdub/TrusineGLCD",
-        "Description": "Embedded-level C code to control a graphical LCD display via STM32 microcontroller using UART and I2C."
-      }
-    ]
-  },
-  {
-    "title": "LabVIEW",
-    "projects": [
-      {
-        "Name": "Theremin Control Panel",
-        "URL": "https://github.com/swapdub/EE300W-Light-Sensitive-Theremin",
-        "Description": "LabVIEW interface to control light sensors creating a 2D plane of control for a musician."
-      },
-      {
-        "Name": "State Machines",
-        "URL": "https://github.com/swapdub/EE200_Design-Tools_building-State-Machines",
-        "Description": "LabVIEW code for a state machine, similar to the control panel of a vending machine."
-      }
-    ]
-  }
-]
+{
+  "personal": [
+    {
+      "title": "Full-Stack & DevOps",
+      "projects": [
+        {
+          "Name": "Samba Web UI",
+          "URL": "https://github.com/swapdub",
+          "Description": "Full-stack web app to manage Samba shares on self-hosted Linux servers. Next.js frontend + Python/Flask backend that safely edits /etc/samba/smb.conf. Deployed with Docker Compose behind Nginx Proxy Manager."
+        },
+        {
+          "Name": "Self-Hosted Home Server",
+          "URL": "https://github.com/swapdub",
+          "Description": "Personal Ubuntu 22 LTS server running 8+ self-hosted services: Jellyfin, Immich, Minecraft, and more. Managed with Docker Compose and Portainer, exposed securely via Nginx Proxy Manager and Tailscale VPN. Includes reproducible setup and recovery scripts."
+        }
+      ]
+    },
+    {
+      "title": "Embedded & Hardware",
+      "projects": [
+        {
+          "Name": "Downhole Electro-Hydraulic Control System",
+          "URL": "https://github.com/swapdub",
+          "Description": "Penn State Capstone with Schlumberger. Led a 7-member cross-departmental team to deliver a portable touch interface for an electro-hydraulic control system. C++ and Python on Arduino + Raspberry Pi. Achieved a 60% cost reduction over traditional solutions."
+        },
+        {
+          "Name": "Graphical LCD Driver",
+          "URL": "https://github.com/swapdub/TrusineGLCD",
+          "Description": "Embedded-level C++ driver to operate a graphical LCD display via STM32 microcontroller using UART and I2C. Written during internship at Trusine Solutions."
+        }
+      ]
+    },
+    {
+      "title": "Python",
+      "projects": [
+        {
+          "Name": "Discord Music Bot",
+          "URL": "https://github.com/swapdub/Discord_Bot",
+          "Description": "Deployed across multiple Discord servers, handling 50+ daily song requests. Automated YouTube/Spotify search and playback using discord.py and web scraping."
+        },
+        {
+          "Name": "Computational Astrophysics",
+          "URL": "https://github.com/swapdub/Computational_Astrophysics",
+          "Description": "Numerical algorithms and interpolation functions for astrophysical data analysis and simulations. Covers orbital mechanics, statistical distributions, and integration methods from scratch using NumPy."
+        },
+        {
+          "Name": "CSV Suffix Cleaner",
+          "URL": "https://github.com/swapdub/ClientBAM",
+          "Description": "A PyQt application using RegEx to filter and remove suffixes from words or names in CSV files."
+        }
+      ]
+    },
+    {
+      "title": "Computer Vision & Signal Processing",
+      "projects": [
+        {
+          "Name": "Computer Vision",
+          "URL": "https://github.com/swapdub/EE-454-Computer-Vision",
+          "Description": "Image processing algorithms including Hough Transforms for edge detection, and AR spatial mapping. Extracted 3D spatial data from video and mapped 2D images onto 3D world with user movement tracking using MATLAB and Python."
+        }
+      ]
+    },
+    {
+      "title": "Windows Scripting",
+      "projects": [
+        {
+          "Name": "Windows Scripting",
+          "URL": "./windows_scripting.html",
+          "Description": "Batch scripts to automate repetitive Windows workflows — minimal overhead, practical results."
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "title": "Python",
+      "projects": [
+        {
+          "Name": "Space Invaders",
+          "URL": "https://github.com/swapdub/Space_invaders_py",
+          "Description": "Classic Space Invaders rebuilt in Pygame to get hands-on with Object Oriented Programming patterns in Python."
+        }
+      ]
+    },
+    {
+      "title": "Web Development",
+      "projects": [
+        {
+          "Name": "Dice Challenge",
+          "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Dicee Challenge - Starting Files/dicee.html",
+          "Description": "A simple game around random number generation where each page-refresh is a turn."
+        },
+        {
+          "Name": "Drum Kit",
+          "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Drum Kit Starting Files/index.html",
+          "Description": "A drum kit simulator triggered by keyboard events."
+        },
+        {
+          "Name": "Simon Says",
+          "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Simon Game Challenge Starting Files/index.html",
+          "Description": "A single-player memory game — practice with event handling and DOM state."
+        },
+        {
+          "Name": "TinDog (Bootstrap 5)",
+          "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Bootstrap-installation/TinDog-Start-master/index.html",
+          "Description": "Landing page mockup built to learn Bootstrap 5 grid and components."
+        }
+      ]
+    },
+    {
+      "title": "LabVIEW",
+      "projects": [
+        {
+          "Name": "Theremin Control Panel",
+          "URL": "https://github.com/swapdub/EE300W-Light-Sensitive-Theremin",
+          "Description": "LabVIEW interface to control light sensors creating a 2D plane of control for a musician."
+        },
+        {
+          "Name": "State Machines",
+          "URL": "https://github.com/swapdub/EE200_Design-Tools_building-State-Machines",
+          "Description": "LabVIEW code for a state machine, similar to the control panel of a vending machine."
+        }
+      ]
+    }
+  ]
+}

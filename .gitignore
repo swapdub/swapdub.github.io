@@ -1,4 +1,6 @@
 *.zip
 style2.css
 *.json
+*.md
 !projects*
+!Readme.md
