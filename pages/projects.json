@@ -1,11 +1,26 @@
 [
   {
-    "title": "Windows Batch",
+    "title": "Full-Stack & DevOps",
     "projects": [
       {
-        "Name": "Windows Scripting",
-        "URL": "./windows_scripting.html",
-        "Description": "Scripts and notes on powershell commands used to automate windows."
+        "Name": "Samba Web UI",
+        "URL": "https://github.com/swapdub",
+        "Description": "Full-stack web app to manage Samba shares on self-hosted Linux servers. Next.js frontend + Python/Flask backend that safely edits /etc/samba/smb.conf. Deployed with Docker Compose behind Nginx Proxy Manager."
+      },
+      {
+        "Name": "Self-Hosted Home Server",
+        "URL": "https://github.com/swapdub",
+        "Description": "Personal Ubuntu 22 LTS server running 8+ self-hosted services: Jellyfin, Immich, Minecraft, and more. Managed with Docker Compose and Portainer, exposed securely via Nginx Proxy Manager and Tailscale VPN. Includes reproducible setup and recovery scripts."
+      }
+    ]
+  },
+  {
+    "title": "Embedded & Hardware",
+    "projects": [
+      {
+        "Name": "Downhole Electro-Hydraulic Control System",
+        "URL": "https://github.com/swapdub",
+        "Description": "Penn State Capstone with Schlumberger. Led a 7-member cross-departmental team to deliver a portable touch interface for an electro-hydraulic control system. C++ and Python on Arduino + Raspberry Pi. Achieved a 60% cost reduction over traditional solutions."
       }
     ]
   },
@@ -13,34 +28,49 @@
     "title": "Python",
     "projects": [
       {
-        "Name": "Music Bot for Discord",
+        "Name": "Discord Music Bot",
         "URL": "https://github.com/swapdub/Discord_Bot",
-        "Description": "Listen to music together with friends on a Discord call."
-      },
-      {
-        "Name": "Space Invaders using Pygame",
-        "URL": "https://github.com/swapdub/Space_invaders_py",
-        "Description": "Classic Space Invaders game built to practice and understand use of Object Oriented Programming."
-      },
-      {
-        "Name": "Guess-the-Number",
-        "URL": "https://replit.com/@swapdub/Guess-the-Number",
-        "Description": "A Command-Line-Interface game where user tries to guess."
+        "Description": "Deployed across multiple Discord servers, handling 50+ daily song requests. Automated YouTube/Spotify search and playback using discord.py and web scraping."
       },
       {
         "Name": "Computational Astrophysics",
         "URL": "https://github.com/swapdub/Computational_Astrophysics",
-        "Description": "Implemented Algorithms and interpolation functions using python for Data Analysis and Simulations."
+        "Description": "Numerical algorithms and interpolation functions for astrophysical data analysis and simulations. Covers orbital mechanics, statistical distributions, and integration methods from scratch using NumPy."
       },
       {
-        "Name": "CSV Suffix Cleaner Bot",
+        "Name": "Space Invaders (Pygame)",
+        "URL": "https://github.com/swapdub/Space_invaders_py",
+        "Description": "Classic Space Invaders built to practice and understand Object Oriented Programming in Python."
+      },
+      {
+        "Name": "CSV Suffix Cleaner",
         "URL": "https://github.com/swapdub/ClientBAM",
-        "Description": "A PyQt application using RegEx to filter and remove suffixes out of words or names."
+        "Description": "A PyQt application using RegEx to filter and remove suffixes from words or names in CSV files."
       }
     ]
   },
   {
-    "title": "HTML/CSS",
+    "title": "Computer Vision & Signal Processing",
+    "projects": [
+      {
+        "Name": "Computer Vision",
+        "URL": "https://github.com/swapdub/EE-454-Computer-Vision",
+        "Description": "Image processing algorithms including Hough Transforms for edge detection, and AR spatial mapping. Extracted 3D spatial data from video and mapped 2D images onto 3D world with user movement tracking using MATLAB and Python."
+      }
+    ]
+  },
+  {
+    "title": "Windows Scripting",
+    "projects": [
+      {
+        "Name": "Windows Scripting",
+        "URL": "./windows_scripting.html",
+        "Description": "Scripts and notes on PowerShell commands used to automate Windows workflows."
+      }
+    ]
+  },
+  {
+    "title": "HTML/CSS Exercises",
     "projects": [
       {
         "Name": "Dice Challenge",
@@ -48,59 +78,44 @@
         "Description": "A simple game around random number generation where each page-refresh is a turn."
       },
       {
-        "Name": "Drum Kits",
+        "Name": "Drum Kit",
         "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Drum Kit Starting Files/index.html",
-        "Description": "A Drum kit simulator that is triggered by key events."
+        "Description": "A Drum kit simulator triggered by key events."
       },
       {
         "Name": "Simon Says",
         "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Simon Game Challenge Starting Files/index.html",
-        "Description": "A single-player memory game to familiarize with reading events and data manipulation."
+        "Description": "A single-player memory game familiarizing with event handling and data manipulation."
       },
       {
-        "Name": "Custom Website CSS Practice",
-        "URL": "https://swapdub.github.io/Complete-Web-Development-2021/",
-        "Description": "First version of a Portfolio Website."
-      },
-      {
-        "Name": "Tindog Website (Bootstrap 5)",
+        "Name": "TinDog Website (Bootstrap 5)",
         "URL": "https://swapdub.github.io/Complete-Web-Development-2021/Bootstrap-installation/TinDog-Start-master/index.html",
-        "Description": "Tinder clone frontend built for dog owners."
+        "Description": "Tinder clone frontend built for dog owners — a Bootstrap 5 practice project."
       }
     ]
   },
   {
-    "title": "C and C++",
+    "title": "C and C++ (Embedded)",
     "projects": [
       {
-        "Name": "Graphical LCD Program",
+        "Name": "Graphical LCD Driver",
         "URL": "https://github.com/swapdub/TrusineGLCD",
-        "Description": "Embedded level C code to control a graphical LCD."
+        "Description": "Embedded-level C code to control a graphical LCD display via STM32 microcontroller using UART and I2C."
       }
     ]
   },
   {
-    "title": "LabView",
+    "title": "LabVIEW",
     "projects": [
       {
         "Name": "Theremin Control Panel",
         "URL": "https://github.com/swapdub/EE300W-Light-Sensitive-Theremin",
-        "Description": "A low budget LabVIEW interface designed to control light sensors creating a 2D plane of control for the musician."
+        "Description": "LabVIEW interface to control light sensors creating a 2D plane of control for a musician."
       },
       {
         "Name": "State Machines",
         "URL": "https://github.com/swapdub/EE200_Design-Tools_building-State-Machines",
-        "Description": "Code for a State Machine, a device similar to the control panel of a vending machine."
-      }
-    ]
-  },
-  {
-    "title": "MATLAB",
-    "projects": [
-      {
-        "Name": "Computer Vision",
-        "URL": "https://github.com/swapdub/EE-454-Computer-Vision",
-        "Description": "Algorithms written to perform transformations, apply correction filters, and 3D spatial anaylsis using pictures, math and matrices."
+        "Description": "LabVIEW code for a state machine, similar to the control panel of a vending machine."
       }
     ]
   }

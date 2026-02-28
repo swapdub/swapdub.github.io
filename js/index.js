@@ -8,7 +8,7 @@
    const OVERFLOW_THRESHOLD = 50;
    const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 8;
    
-   const canvas = document.querySelector( 'canvas' ),
+   const canvas = document.getElementById( 'star-canvas' ),
          context = canvas.getContext( '2d' );
    
    let scale = 1, // device pixel ratio
@@ -224,4 +224,69 @@
      pointerY = null;
    
    }
-   
+
+/* =============================================
+   NAV — scroll shadow + active link
+   ============================================= */
+const nav = document.getElementById('nav');
+const navLinks = document.querySelectorAll('.nav__link');
+const sections = document.querySelectorAll('section[id], footer[id]');
+
+function onScroll() {
+  // scrolled state for nav border
+  if (window.scrollY > 20) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+
+  // active nav link based on current section
+  let current = '';
+  sections.forEach(sec => {
+    const top = sec.offsetTop - 90;
+    if (window.scrollY >= top) current = sec.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+/* =============================================
+   HAMBURGER MENU
+   ============================================= */
+const hamburger  = document.getElementById('nav-hamburger');
+const mobileMenu = document.getElementById('nav-mobile');
+const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    if (mobileMenu) mobileMenu.classList.toggle('open', open);
+  });
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      if (mobileMenu) mobileMenu.classList.remove('open');
+    });
+  });
+}
+
+/* =============================================
+   SCROLL REVEAL (Intersection Observer)
+   ============================================= */
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
