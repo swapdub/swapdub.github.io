@@ -99,7 +99,15 @@
     </div>
 
     <footer class="page-footer">
-      <p>© 2026 Swapnil Dubey &nbsp;·&nbsp; <a href="/">swapdub.github.io</a></p>
+      <p id="footer-copyright"></p>
+        <script>
+          // Dynamically set copyright year
+          const copyright = document.getElementById('footer-copyright');
+          if (copyright) {
+            const year = new Date().getFullYear();
+            copyright.innerHTML = `© ${year} Swapnil Dubey &nbsp;·&nbsp; <a href="/">swapdub.github.io</a>`;
+          }
+        </script>
     </footer>
 
     <script>feather.replace();</script>
